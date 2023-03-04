@@ -3,6 +3,8 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
         <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
         <title><%= htmlWebpackPlugin.options.title %></title>
     </head>
     <style>
@@ -23,14 +25,5 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <body>
         <div id="onto-container"></div>
-        <select class="demoSelector" onchange="window.location.href = this.value">
-            <option value="index.html">Local</option>
-        </select>
-        <script>
-            var pathname = window.location.pathname;
-            var separatorIndex = pathname.lastIndexOf('/');
-            var page = separatorIndex >= 0 ? pathname.substring(separatorIndex + 1) : pathname;
-            document.querySelector('.demoSelector').value = page || 'index.html';
-        </script>
     </body>
 </html>
