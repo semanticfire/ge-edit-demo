@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+#onto-container {
+	height: calc(100vh - 120px);
+	display: flex;
+	margin: 10px;
+	flex-direction: column;
+}
+
+#onto-container .ontodia {
+	overflow: hidden;
+}
+
+.content-inner.fullscreen #onto-container {
+	height: calc(100vh - 85px);
+
+}
+
+.ontodia-paper-area__watermark {
+	display: none !important;
+}
+
+.ontodia-toolbar__language-selector label {
+	margin-left: 10px;
+}
+
+.ontodia-toolbar button::after {
+	content: " "
+}
+
+.geo_point {
+	height: 300px;
+	width: 300px;
+}
+
+dd {
+	margin-bottom: 0em;
+}
+
+dd:last-of-type {
+	margin-bottom: .5rem
+}
+
+#onto-container .ontodia-halo {
+	box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22) !important;
+	border-radius: 5px;
+	border: 1.5px dashed #ced4da;
+}
+
+.ontodia-standard-template__dropdown-content dl {
+    max-height: 300px;
+    overflow-x: none;
+    overflow-y: auto;
+}
